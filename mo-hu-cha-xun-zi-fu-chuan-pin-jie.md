@@ -28,9 +28,9 @@ where name like concat\(concat\('%',\#{name}\),'%'\)
 
 &lt;&gt;
 
+where name like '%' \|\| upper\(\#{name}\) \|\| '%'
+
 &lt;/&gt;
 
 
-
-where name like '%' \|\| upper\(\#{name}\) \|\| '%'
 
