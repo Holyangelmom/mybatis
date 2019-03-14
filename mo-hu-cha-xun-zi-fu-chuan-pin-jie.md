@@ -26,11 +26,5 @@ where name like concat\(concat\('%',\#{name}\),'%'\)
 
 前提需要mybatis的upper\(\)或lower\(\)方法
 
-&lt;&gt;
-
 where name like '%' \|\| upper\(\#{name}\) \|\| '%'
-
-&lt;/&gt;
-
-
 
