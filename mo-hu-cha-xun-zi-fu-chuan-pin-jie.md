@@ -2,25 +2,27 @@
 
 ### 1、使用concat方法
 
-name like concat\(concat\('%',\#{name}\),'%'\)
+where name like concat\(concat\('%',\#{name}\),'%'\)
 
 ### 2、动态sql标签的&lt;bind&gt;标签
 
-	&lt;select id="query" resultType="Map"&gt;
-
-		&lt;bind name="bindName" value="'%'+name+'%'"&gt;&lt;/bind&gt;
-
-		select \*
-
+```
+	<select id="query" resultType="Map">
+		<bind name="bindName" value="'%'+name+'%'"></bind>
+		select *
 		from post
-
 		where 1=1
+		<if test="name != null">
+		name like #{bindName}
+		</if>
+ 	</select>
+```
 
-		&lt;if test="name != null"&gt;
+### 3、在java方法中拼接字符串
 
-		name like \#{bindName}
+（略）
 
-		&lt;/if&gt;
+### 4、使用“\|\|”
 
- 	&lt;/select&gt;
+前提需要mybatis的upper\(\)或lower\(\)方法，
 
