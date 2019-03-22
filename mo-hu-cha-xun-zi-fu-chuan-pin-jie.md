@@ -4,6 +4,8 @@
 
 where name like concat\(concat\('%',\#{name}\),'%'\)
 
+where name like concat\('%',\#{name},'%'\)
+
 ### 2、动态sql标签的&lt;bind&gt;标签
 
 ```
