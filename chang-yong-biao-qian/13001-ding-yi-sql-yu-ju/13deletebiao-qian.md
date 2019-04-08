@@ -6,7 +6,9 @@
 
 ```sql
 <delete id="deleteByPrimaryKey" parameterType="Object">
-        delete      from student where id=#{id}
+        delete
+        from student 
+        where id=#{id}
 </delete>
 ```
 
