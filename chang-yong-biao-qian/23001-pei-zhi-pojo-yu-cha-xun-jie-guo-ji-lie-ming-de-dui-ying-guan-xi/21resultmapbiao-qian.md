@@ -9,7 +9,7 @@
 ##### （2）实例
 
 ```sql
-<resultMap id="resultMap" type="com.online.charge.platform.student.model.Student">
+<resultMap id="resultMap" type="com.student.model.Student">
         <id property="id" column="id" />
         <result column="NAME" property="name" />
         <result column="HOBBY" property="hobby" />
@@ -28,6 +28,14 @@
 ```
 
 ##### （3）属性介绍
+
+```sql
+<resultMap id="resultMap" type="com.student.model.Student">
+```
+
+id:该resultMap的标志
+
+type：返回值的类名，此例中返回Studnet类
 
 
 
