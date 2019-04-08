@@ -7,8 +7,9 @@
 
 ```sql
 <insert id="insert" parameterType="Object">
-        insert into student    <trim     prefix="("    suffix=")"    suffixOverrides="," >    
-    <if test="name != null  "> NAME,  </if>    
+        insert into student    
+        <trim     prefix="("    suffix=")"    suffixOverrides="," >    
+            <if test="name != null  "> NAME,  </if>    
     </trim>    <trim     prefix="values("    suffix=")"    suffixOverrides="," >
     <if test="name != null  ">  #{name},  </if>    
     </trim>
