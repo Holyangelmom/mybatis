@@ -32,7 +32,7 @@
 <resultMap id="resultMap" type="com.student.model.Student">
 ```
 
-id:该resultMap的标志
+id：该resultMap的标志
 
 type：返回值的类名，此例中返回Studnet类
 
