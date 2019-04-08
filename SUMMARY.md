@@ -14,4 +14,5 @@
     * [2.1、resultMap标签](chang-yong-biao-qian/23001-pei-zhi-pojo-yu-cha-xun-jie-guo-ji-lie-ming-de-dui-ying-guan-xi/21resultmapbiao-qian.md)
   * [3、动态sql拼接](chang-yong-biao-qian/33001-dong-tai-sql-pin-jie.md)
     * [3.1、if标签](chang-yong-biao-qian/33001-dong-tai-sql-pin-jie/31ifbiao-qian.md)
+    * [3.2、foreach 标签](chang-yong-biao-qian/33001-dong-tai-sql-pin-jie/32foreach-biao-qian.md)
 
