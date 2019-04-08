@@ -36,3 +36,10 @@ id：该resultMap的标志
 
 type：返回值的类名，此例中返回Studnet类
 
+```sql
+<id property="id" column="id" />
+<result column="NAME" property="name" />
+```
+
+
+
