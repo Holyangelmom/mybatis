@@ -16,7 +16,6 @@
         <result column="MAJOR" property="major" />
         <result column="BIRTHDAY" property="birthday" />
         <result column="AGE" property="age" />
-
 </resultMap>
 ```
 
@@ -36,6 +35,4 @@
 id:该resultMap的标志
 
 type：返回值的类名，此例中返回Studnet类
-
-
 
