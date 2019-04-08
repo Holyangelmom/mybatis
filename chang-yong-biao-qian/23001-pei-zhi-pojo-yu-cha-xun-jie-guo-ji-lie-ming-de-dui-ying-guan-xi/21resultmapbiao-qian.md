@@ -18,7 +18,7 @@
 </resultMap>
 ```
 
-```
+```sql
 <!--查询时resultMap引用该resultMap -->
 <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="Object">
     select id,name,hobby,major,birthday,age from student where id=#{id}
