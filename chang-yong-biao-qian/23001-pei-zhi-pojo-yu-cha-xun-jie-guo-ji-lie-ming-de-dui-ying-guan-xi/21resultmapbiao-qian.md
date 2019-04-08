@@ -41,5 +41,7 @@ type：返回值的类名，此例中返回Studnet类
 <result column="NAME" property="name" />
 ```
 
+id：用于设置主键字段与领域模型属性的映射关系，此处主键为ID，对应id。
 
+result：用于设置普通字段与领域模型属性的映射关系
 
