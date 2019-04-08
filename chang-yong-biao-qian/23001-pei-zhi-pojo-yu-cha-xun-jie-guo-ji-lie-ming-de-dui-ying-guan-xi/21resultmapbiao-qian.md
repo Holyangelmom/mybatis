@@ -1,10 +1,12 @@
 ### 2.1、resultMap标签
 
-基本作用：
+##### （1）基本作用：
 
 * 建立SQL查询结果字段与实体属性的映射关系信息
 * 查询的结果集转换为java对象。
 * 将结果集中的列与java对象中的属性对应起来并将值填充进去
+
+##### （2）实例
 
 ```sql
 <resultMap id="resultMap" type="com.online.charge.platform.student.model.Student">
@@ -24,6 +26,8 @@
     select id,name,hobby,major,birthday,age from student where id=#{id}
 </select>
 ```
+
+##### （3）属性介绍
 
 
 
