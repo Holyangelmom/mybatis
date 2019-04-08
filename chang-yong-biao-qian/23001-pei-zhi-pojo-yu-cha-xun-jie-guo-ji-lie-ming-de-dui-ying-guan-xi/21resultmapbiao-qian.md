@@ -7,7 +7,7 @@
 * 将结果集中的列与java对象中的属性对应起来并将值填充进去
 
 ```sql
-<resultMap id="BaseResultMap" type="com.online.charge.platform.student.model.Student">
+<resultMap id="resultMap" type="com.online.charge.platform.student.model.Student">
         <id property="id" column="id" />
         <result column="NAME" property="name" />
         <result column="HOBBY" property="hobby" />
@@ -20,7 +20,7 @@
 
 ```sql
 <!--查询时resultMap引用该resultMap -->
-<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="Object">
+<select id="selectByPrimaryKey" resultMap="resultMap" parameterType="Object">
     select id,name,hobby,major,birthday,age from student where id=#{id}
 </select>
 ```
