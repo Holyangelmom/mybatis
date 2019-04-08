@@ -10,4 +10,5 @@
     * [1.2、insert标签](chang-yong-biao-qian/13001-ding-yi-sql-yu-ju/12insertbiao-qian.md)
     * [1.3、delete标签](chang-yong-biao-qian/13001-ding-yi-sql-yu-ju/13deletebiao-qian.md)
     * [1.4、update标签](chang-yong-biao-qian/13001-ding-yi-sql-yu-ju/14updatebiao-qian.md)
+  * [2、配置POJO与查询结果集列名的对应关系](chang-yong-biao-qian/23001-pei-zhi-pojo-yu-cha-xun-jie-guo-ji-lie-ming-de-dui-ying-guan-xi.md)
 
