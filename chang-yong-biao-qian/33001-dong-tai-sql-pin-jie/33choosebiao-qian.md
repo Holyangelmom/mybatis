@@ -22,8 +22,10 @@
             </otherwise>     
         </choose>     
     </where>     
-</select> 
+</select>
 ```
 
+##### （3）属性介绍
 
+类似于Java 的switch 语句，choose为switch，when为case，otherwise则为default
 
