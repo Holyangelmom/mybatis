@@ -11,7 +11,9 @@ trim标记是一个格式化的标记，主要用于拼接sql的条件语句（�
 * prefixOverrides：忽略前缀的内容
 * suffixOverrides：忽略后缀的内容
 
-（3）实例
+##### （3）实例
+
+update语句
 
 ```sql
 <update id="updateByPrimaryKey" parameterType="Object">
@@ -25,6 +27,24 @@ trim标记是一个格式化的标记，主要用于拼接sql的条件语句（�
     </if>
   </trim> where id=#{id}
 </update>
+
+
+如果name和hobby的值都不为空的话，会执行如下语句
+update student set NAME='XX',HOBBY='XX' where id='XX'
+```
+
+select语句
+
+```sql
+<select id="selectByNameOrHobby" resultMap="BaseResultMap">
+	select * from student 
+	<trim prefix="WHERE" prefixOverrides="AND | OR">
+		<if test="name != null and name.length()>0"> AND name=#{name}
+		</if>
+		<if test="hobby != null and hobby.length()>0"> AND hobby=#{hobby}
+		</if>
+	</trim>
+</select>
 ```
 
 
