@@ -19,4 +19,5 @@
   * [4、格式化条件输出](chang-yong-biao-qian/ge-shi-hua-tiao-jian-shu-chu.md)
     * [4.1、where标签](chang-yong-biao-qian/ge-shi-hua-tiao-jian-shu-chu/41wherebiao-qian.md)
     * [4.2、set 标签](chang-yong-biao-qian/ge-shi-hua-tiao-jian-shu-chu/42set-biao-qian.md)
+    * [4.3、trim标签](chang-yong-biao-qian/ge-shi-hua-tiao-jian-shu-chu/43trimbiao-qian.md)
 
