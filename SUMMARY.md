@@ -25,4 +25,5 @@
     * 5.2、association标签
   * [6、定义常量及引用](chang-yong-biao-qian/63001-ding-yi-chang-liang-ji-yin-yong.md)
     * [6.1、sql标签](chang-yong-biao-qian/63001-ding-yi-chang-liang-ji-yin-yong/61sqlbiao-qian.md)
+    * [6.2、include标签](chang-yong-biao-qian/63001-ding-yi-chang-liang-ji-yin-yong/62includebiao-qian.md)
 
