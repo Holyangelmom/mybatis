@@ -11,5 +11,21 @@ trim标记是一个格式化的标记，主要用于拼接sql的条件语句（�
 * prefixOverrides：忽略前缀的内容
 * suffixOverrides：忽略后缀的内容
 
+（3）实例
+
+```sql
+<update id="updateByPrimaryKey" parameterType="Object">
+        update student set 
+  <trim  suffixOverrides="," > 
+    <if test="name != null  ">
+        NAME=#{name},
+    </if>
+    <if test="hobby != null  ">
+        HOBBY=#{hobby},
+    </if>
+  </trim> where id=#{id}
+</update>
+```
+
 
 
