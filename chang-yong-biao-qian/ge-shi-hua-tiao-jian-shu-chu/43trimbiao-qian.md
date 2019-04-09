@@ -37,14 +37,18 @@ select语句
 
 ```sql
 <select id="selectByNameOrHobby" resultMap="BaseResultMap">
-	select * from student 
-	<trim prefix="WHERE" prefixOverrides="AND | OR">
-		<if test="name != null and name.length()>0"> AND name=#{name}
-		</if>
-		<if test="hobby != null and hobby.length()>0"> AND hobby=#{hobby}
-		</if>
-	</trim>
+    select * from student 
+    <trim prefix="WHERE" prefixOverrides="AND | OR">
+        <if test="name != null and name.length()>0"> AND name=#{name}
+        </if>
+        <if test="hobby != null and hobby.length()>0"> AND hobby=#{hobby}
+        </if>
+    </trim>
 </select>
+
+
+如果name和hobby的值都不为空的话，会执行如下语句
+select * from user WHERE /*and*/ name = ‘xx’ and hobby= ‘xx’
 ```
 
 
