@@ -51,5 +51,30 @@ select语句
 select * from user WHERE /*and*/ name = ‘xx’ and hobby= ‘xx’
 ```
 
+insert语句
+
+```sql
+<insert id="insert" parameterType="Object">
+	insert into student    
+	<trim     prefix="("    suffix=")"    suffixOverrides="," >
+		<if test="name != null  ">
+			NAME,
+		</if>
+		<if test="hobby != null  ">
+			HOBBY,
+		</if>    
+    </trim>    
+	
+	<trim     prefix="values("    suffix=")"    suffixOverrides="," >  
+		<if test="name != null  ">
+			#{name},
+		</if>
+		<if test="hobby != null  ">
+			#{hobby},
+		</if>
+    </trim>
+</insert>
+```
+
 
 
