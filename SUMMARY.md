@@ -20,4 +20,9 @@
     * [4.1、where标签](chang-yong-biao-qian/ge-shi-hua-tiao-jian-shu-chu/41wherebiao-qian.md)
     * [4.2、set 标签](chang-yong-biao-qian/ge-shi-hua-tiao-jian-shu-chu/42set-biao-qian.md)
     * [4.3、trim标签](chang-yong-biao-qian/ge-shi-hua-tiao-jian-shu-chu/43trimbiao-qian.md)
+  * [5、配置关联关系](chang-yong-biao-qian/53001-pei-zhi-guan-lian-guan-xi.md)
+    * [5.1、collection标签](chang-yong-biao-qian/53001-pei-zhi-guan-lian-guan-xi/51collectionbiao-qian.md)
+    * 5.2、association标签
+  * [6、定义常量及引用](chang-yong-biao-qian/63001-ding-yi-chang-liang-ji-yin-yong.md)
+    * [6.1、sql标签](chang-yong-biao-qian/63001-ding-yi-chang-liang-ji-yin-yong/61sqlbiao-qian.md)
 
